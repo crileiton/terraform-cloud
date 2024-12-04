@@ -51,7 +51,7 @@ resource "aws_route_table_association" "crta_public_subnet" {
 
 resource "aws_security_group" "sg_public_instance" {
   name        = "Public instance SG"
-  description = "Allow SSH inbound traffic and ALL egrees traffic"
+  description = "Allow SSH inbound traffic and ALL egrees traffic test"
   vpc_id      = aws_vpc.vpc_virginia.id
 
   dynamic "ingress" {
